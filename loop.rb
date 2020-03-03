@@ -237,6 +237,4 @@ a =[]
 while i < results.length
  p results[i]
 i += 1
-
 end
-p a[1][:movies]
