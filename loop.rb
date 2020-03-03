@@ -233,4 +233,4 @@ results = [{:name=>"Stephen Spielberg",
      :worldwide_gross=>58620973,
      :release_year=>1996}]}]
 
-pp results
+p results[0][:name]
