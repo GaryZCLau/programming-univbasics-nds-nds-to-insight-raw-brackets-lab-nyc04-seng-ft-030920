@@ -34,9 +34,11 @@ while row_index < nds.count do
   end
   row_index += 1
 end
+
+result[names.zip(grosstotal)]
+result
   # Be sure to return the result at the end!
 
-  nil
 end
 
 # index = 0
