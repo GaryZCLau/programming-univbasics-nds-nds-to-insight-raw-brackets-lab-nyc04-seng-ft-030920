@@ -35,7 +35,6 @@ while row_index < nds.count do
   row_index += 1
 end
 
-result[names.zip(grosstotal)]
 result[names.zip(grosstotal.map{|i| i.include?(',') ? i.split(',') : i})]
 result
   # Be sure to return the result at the end!
