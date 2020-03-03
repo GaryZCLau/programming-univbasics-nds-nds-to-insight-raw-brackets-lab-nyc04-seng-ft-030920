@@ -15,7 +15,7 @@ row_index = 0
 names = {}
 while row_index < nds.count do
   namevariable = nds[row_index][:name]
-  names.merge!(namevariable.to_s)
+  names.merge!(namevariable => nil)
   row_index += 1
 end
 
