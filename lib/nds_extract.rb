@@ -12,14 +12,14 @@ def directors_totals(nds)
   # Use loops, variables and the accessing method, [], to loop through the NDS
   # and total up all the
 row_index = 0
-names = {}
+names = []
 while row_index < nds.count do
   namevariable = nds[row_index][:name]
-  names.merge!(namevariable)
+  names.push(namevariable)
   row_index += 1
 end
 
-grosstotal = {}
+grosstotal = []
 while row_index < nds.count do
   column_index = 0
   while column_index < nds[row_index].count
@@ -27,14 +27,14 @@ while row_index < nds.count do
     while grossindex < nds[row_index][column_index].count
       grossvariable += nds[row_index][column_index][grossindex][:worldwide_gross]
       grossindex += 1
-      grosstotal.merge!(grossvariable)
+      grosstotal.push(grossvariable)
     end
     column_index += 1
   end
   row_index += 1
 end
 
-# result[names.zip(grosstotal.map{|i| i.include?(',') ? i.split(',') : i})]
+result[names.zip(grosstotal.map{|i| i.include?(',') ? i.split(',') : i})]
 result
   # Be sure to return the result at the end!
 
