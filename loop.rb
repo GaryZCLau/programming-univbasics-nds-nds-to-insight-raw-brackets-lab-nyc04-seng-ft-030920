@@ -238,7 +238,7 @@ while i < results.length
  p results[i]
  tindex = 0
  while tindex < results[i][:movies].length
-   p results[i][:movies][tindex]
+   p results[i][:movies][tindex][:title]
    tindex += 1
  end
 i += 1
