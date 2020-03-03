@@ -27,7 +27,7 @@ while row_index < nds.count do
     while grossindex < nds[row_index][column_index].count
       grossvariable += nds[row_index][column_index][grossindex][:worldwide_gross]
       grossindex += 1
-      grosstotal.merge!(grossvariable)
+      grosstotal.merge!(grossvariable.to_i)
     end
     column_index += 1
   end
