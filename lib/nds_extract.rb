@@ -27,7 +27,7 @@ while row_index < nds.count do
     grossindex = 0
     while grossindex < nds[row_index][column_index].count
       grossvariable = nds[row_index][column_index][grossindex][:worldwide_gross]
-      grossvariable << grosstotal
+      grosstotal.push(grossvariable)
       grossindex += 1
     end
     column_index += 1
