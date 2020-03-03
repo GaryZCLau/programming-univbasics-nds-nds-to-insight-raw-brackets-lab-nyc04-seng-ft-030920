@@ -15,7 +15,7 @@ row_index = 0
 names = {}
 while row_index < nds.count do
   namevariable = nds[row_index][:name]
-  names.push(namevariable)
+  names.merge!(namevariable)
   row_index += 1
 end
 
@@ -27,7 +27,7 @@ while row_index < nds.count do
     while grossindex < nds[row_index][column_index].count
       grossvariable += nds[row_index][column_index][grossindex][:worldwide_gross]
       grossindex += 1
-      grosstotal.push(grossvariable)
+      grosstotal.merge!(grossvariable)
     end
     column_index += 1
   end
