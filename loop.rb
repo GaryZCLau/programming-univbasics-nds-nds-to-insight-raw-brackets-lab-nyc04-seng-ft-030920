@@ -233,8 +233,8 @@ results = [{:name=>"Stephen Spielberg",
      :worldwide_gross=>58620973,
      :release_year=>1996}]}]
 i = 0
-a =[]
+
 while i < results.length
- p results[i][:movies][0][:title]
+ p results[i]
 i += 1
 end
