@@ -233,7 +233,7 @@ results = [{:name=>"Stephen Spielberg",
      :worldwide_gross=>58620973,
      :release_year=>1996}]}]
 i = 0
-while i < results[i].length
+while i < results.length
   p results[i]
 i += 1
 end
