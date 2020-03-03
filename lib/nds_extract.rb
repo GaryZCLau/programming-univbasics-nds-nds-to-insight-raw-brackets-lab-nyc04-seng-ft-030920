@@ -16,7 +16,7 @@ row_index = 0
 names = []
 while row_index < nds.count do
   namevariable = nds[row_index][:name]
-  namevariable << names
+  names.push(namevariable)
   row_index += 1
 end
 
