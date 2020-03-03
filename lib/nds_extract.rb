@@ -34,7 +34,8 @@ while row_index < nds.count do
   row_index += 1
 end
 
-result.merge!(names => grosstotal)
+totalresult = names.merge!(grosstotal)
+result.merge!(totalresult)
 result
   # Be sure to return the result at the end!
 
