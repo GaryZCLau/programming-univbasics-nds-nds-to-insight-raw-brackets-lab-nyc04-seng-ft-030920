@@ -235,6 +235,6 @@ results = [{:name=>"Stephen Spielberg",
 i = 0
 a =[]
 while i < results.length
- p results[i][:movie][:title]
+ p results[i][:movie][:titles]
 i += 1
 end
