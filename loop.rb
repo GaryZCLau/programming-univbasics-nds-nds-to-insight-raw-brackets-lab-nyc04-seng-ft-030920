@@ -239,4 +239,4 @@ while i < results.length
 i += 1
 
 end
-p a[1][:studio]
+p a[1][:studio][0]
