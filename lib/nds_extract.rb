@@ -14,7 +14,7 @@ def directors_totals(nds)
   # and total up all the
 row_index
 while row_index < nds.count do
-
+  nds []
 end
 
   # Be sure to return the result at the end!
